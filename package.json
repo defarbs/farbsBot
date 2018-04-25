@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/defarbs/farbsBot/issues"
   },
-  "homepage": "https://github.com/defarbs/farbsBot#readme"
+  "homepage": "https://github.com/defarbs/farbsBot#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "node-flint": "^4.6.6",
+    "request": "^2.85.0",
+    "ssl-root-cas": "^1.2.5"
+  }
 }
