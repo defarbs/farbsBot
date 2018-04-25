@@ -19,10 +19,12 @@ flint.on("initialized", function() {
 });
 
 var cityName;
+var apikey = '********************************';
+
 
 flint.hears('/weather', function(bot, trigger) {
    cityName = trigger.args.slice(1).join(" ");
-   let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=*****************************&units=imperial`
+   let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apikey}&units=imperial`
    console.log('/weather fired');
    request(url, function(err, response, body) {
        if (err) {
