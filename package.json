@@ -1,0 +1,19 @@
+{
+  "name": "farbsbot",
+  "version": "1.0.0",
+  "description": "Spark Bots, but it's Farbs Bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/defarbs/farbsBot.git"
+  },
+  "author": "Drew 'farbs' Farber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/defarbs/farbsBot/issues"
+  },
+  "homepage": "https://github.com/defarbs/farbsBot#readme"
+}
