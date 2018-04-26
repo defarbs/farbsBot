@@ -19,7 +19,8 @@ flint.on("initialized", function() {
 });
 
 var cityName;
-var apikey = '********************************';
+var apikey = '******************************';
+
 
 
 flint.hears('/weather', function(bot, trigger) {
@@ -28,7 +29,7 @@ flint.hears('/weather', function(bot, trigger) {
    console.log('/weather fired');
    request(url, function(err, response, body) {
        if (err) {
-           console.log('error:', error);
+           console.log('error:', err);
        } else {
            let weather = JSON.parse(body)
            var message;
@@ -36,17 +37,16 @@ flint.hears('/weather', function(bot, trigger) {
                console.log('error: ', err)
                bot.say(`Hmm.... I can't find information for "${cityName}". Try again, maybe?`);
            } else if (weather.main.temp >= 70) {
-               message = `😎 It's ${weather.main.temp} degrees in ${weather.name}! 😎\n`;
+               message = `😎 It's ${weather.main.temp} degrees in ${weather.name}!😎\n`;
            } else if (weather.main.temp < 70 && weather.main.temp >= 55) {
-               message = `☀️ It's ${weather.main.temp} degrees in ${weather.name}! ☀️\n`;
+               message = `☀️ It's ${weather.main.temp} degrees in ${weather.name}!☀️\n`;
            } else if (weather.main.temp < 55 && weather.main.temp > 32) {
-               message = `🙄 It's ${weather.main.temp} degrees in ${weather.name}! 🙄\n`;
+               message = `🙄 It's ${weather.main.temp} degrees in ${weather.name}!🙄\n`;
            } else if (weather.main.temp < 32) {
-               message = `🤧☃️ It's ${weather.main.temp} degrees in ${weather.name}! ☃️🤧\n`;
+               message = `🤧☃️ It's ${weather.main.temp} degrees in ${weather.name}!☃️🤧\n`;
            } else {
-               message = `Couldn't find temperature data for ${weather.name}.\n`;
+               message = `Couldn't find temperature data for ${cityName}.\n`;
            }
-           //message += weather.weather[3];
            bot.say(message);
        }
    });
