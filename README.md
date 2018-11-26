@@ -1,4 +1,5 @@
 # Welcome to Farbs Bot!
+## A Spark Bot with the ability to tell you the weather for any location in the US!
 ### Note: This bot was never fully developed, but you can feel free to use the code at your own discretion.
 
 ## Features
