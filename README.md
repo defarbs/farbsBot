@@ -12,5 +12,5 @@
 - Weather information for entered zip code will be returned
 - Emojis associated with weather. Will change dependent on the "weather-type" values that are returned
 
-#####Additional SideNote:
+###### Additional SideNote:
 - You will need to recreate 'config.json' and add your webhook token there
