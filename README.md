@@ -13,4 +13,4 @@
 - Emojis associated with weather. Will change dependent on the "weather-type" values that are returned
 
 ###### Additional SideNote:
-- You will need to recreate 'config.json' and add your webhook token there
+- You will need to recreate 'config.json' and add your webhook token
